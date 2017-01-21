@@ -5,4 +5,8 @@ AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([foreign])
 AC_PROG_CC
 AC_CONFIG_FILES([Makefile])
+
+PKG_CHECK_MODULES([LIBMODBUS], [libmodbus >= 3.1.4])
+
+
 AC_OUTPUT
